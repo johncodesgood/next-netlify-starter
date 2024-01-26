@@ -62,7 +62,7 @@ export default function Home() {
             <p>
               Don’t have a password yet?
               <br />
-              Follow us for an invitation play Flipped on Dogs.
+              Follow us for an invitation to play Flipped on Dogs.
             </p>
           </div>
           <a href="https://www.facebook.com/FlippedOnDogs/" target="_blank">
