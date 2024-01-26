@@ -9,6 +9,15 @@ export default function Home() {
         "https://fod-client-staging-jlpc4.ondigitalocean.app/";
     } else {
       console.log("NO FLIP");
+      var errorElement = document.getElementById("errorMessage");
+      errorElement.style.display = "block";
+      var errorElementHolder = document.getElementById("errorMessageHolder");
+      errorElementHolder.style.display = "none";
+      document.getElementById("password-input").value = "";
+      setTimeout(() => {
+        errorElement.style.display = "none";
+        errorElementHolder.style.display = "block";
+      }, "3000");
     }
   }
 
@@ -39,6 +48,14 @@ export default function Home() {
           <button className="submit-button" onClick={(e) => handleClick(e)}>
             SUBMIT
           </button>
+        </div>
+        <div id="errorMessage">
+          <p className="error-text">
+            We're sorry but flip says this isn't the correct password!
+          </p>
+        </div>
+        <div id="errorMessageHolder">
+          <p className="error-text">&nbsp;</p>
         </div>
         <div className="footer">
           <div className="social-text">

@@ -56,6 +56,14 @@ code {
   align-items: center;
 }
 
+.error-text {
+  display: block;
+  color: red;
+}
+
+#errorMessage {
+  display: none;
+}
 input {
   width: 90%;
   height: 40px;
