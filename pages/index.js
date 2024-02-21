@@ -5,10 +5,8 @@ export default function Home() {
     e.preventDefault;
     const inputPassword = document.getElementById("password-input").value;
     if (inputPassword && inputPassword.toLowerCase() === "flipforme") {
-      window.location.href =
-        "https://fod-client-staging-jlpc4.ondigitalocean.app/";
+      window.location.href = "https://flippedondogs.com/";
     } else {
-      console.log("NO FLIP");
       var errorElement = document.getElementById("errorMessage");
       errorElement.style.display = "block";
       var errorElementHolder = document.getElementById("errorMessageHolder");
